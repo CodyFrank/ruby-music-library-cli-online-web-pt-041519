@@ -19,16 +19,15 @@ class MusicLibraryController
     user_input = gets.strip
   end
 
-    case user_input
-      when user_input == 'list songs'
+      if user_input == 'list songs'
         self.list_songs
-      when user_input == 'list artists'
+      elsif user_input == 'list artists'
         self.list_artists
-      when user_input == 'list genres'
+      elsif user_input == 'list genres'
         self.list_genres
-      when user_input == 'list artist'
+      elsif user_input == 'list artist'
         self.list_songs_by_artist
-      when user_input == 'list genre'
+      elsif user_input == 'list genre'
         self.list_songs_by_genre
       end
   end
