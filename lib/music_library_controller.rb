@@ -17,7 +17,6 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     user_input = gets.strip
-  end
 
       if user_input == 'list songs'
         self.list_songs
@@ -32,6 +31,7 @@ class MusicLibraryController
       elsif user_input == 'play song'
         self.play_song
       end
+    end
   end
 
   def list_songs
